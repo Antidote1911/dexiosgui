@@ -28,7 +28,7 @@ In the root folder build the dexioscore lib with `cargo build --release`
 
 ## C++ GUI Compilation instructions:
 C++ GUI require Qt5 or Qt6 and dexioscore build with `cargo build --release`.
-After building the Rust core with `cargo build --release`, Open qtgui/CMakeLists.txt with your IDE and build it. If You use qt creator, you can open project cryptyrust.pro to build it.
+After building the Rust core with `cargo build --release`, Open qtgui/CMakeLists.txt with your IDE and build it. If You use qt creator, you can open project dexiosgui.pro to build it.
 
 
 ```bash
