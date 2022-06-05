@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>417</width>
+    <height>222</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>DexiosGui</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="DropArea" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="text">
+       <string>Drop a normal file here to encrypt
+
+or an encrypted file to decrypt</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QProgressBar" name="progBar">
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>417</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="menu_About"/>
+    <addaction name="menu_AboutQt"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="menu_Open"/>
+    <addaction name="menu_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menuConfig">
+    <property name="title">
+     <string>Config</string>
+    </property>
+    <widget class="QMenu" name="menuSkin">
+     <property name="title">
+      <string>Skin</string>
+     </property>
+     <addaction name="actionDark"/>
+     <addaction name="actionLight"/>
+    </widget>
+    <addaction name="actionCrypto"/>
+    <addaction name="menuSkin"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuConfig"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="menu_About">
+   <property name="text">
+    <string>About DixiosGui</string>
+   </property>
+   <property name="toolTip">
+    <string>About Cryptyrust</string>
+   </property>
+  </action>
+  <action name="menu_Open">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="menu_Quit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="menu_AboutQt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionDark">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Dark</string>
+   </property>
+  </action>
+  <action name="actionLight">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Light</string>
+   </property>
+  </action>
+  <action name="actionAes256Gcm">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Aes256Gcm</string>
+   </property>
+  </action>
+  <action name="actiondeoxys">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>deoxys</string>
+   </property>
+  </action>
+  <action name="actionChacha20Poly1305">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Chacha20Poly1305</string>
+   </property>
+  </action>
+  <action name="actionCrypto">
+   <property name="text">
+    <string>Crypto</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>DropArea</class>
+   <extends>QLabel</extends>
+   <header>droparea.h</header>
+   <slots>
+    <slot>setEncrypt()</slot>
+    <slot>setDecrypt()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

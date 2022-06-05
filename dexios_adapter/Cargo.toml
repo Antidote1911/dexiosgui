@@ -1,0 +1,13 @@
+[package]
+name = "dexios_adapter"
+version = "3.0.0"
+authors = ["Antidote1911 <antidote1911@gmail.com>"]
+edition = "2021"
+
+[lib]
+name = "dexios_adapter"
+crate-type = ["staticlib"]
+
+[dependencies]
+dexios_core = { path = "../dexios_core" }
+zeroize = "1.3.0"
