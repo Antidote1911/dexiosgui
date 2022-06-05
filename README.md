@@ -1,5 +1,5 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/3yludsnwm5a1jnsa/branch/master?svg=true)](https://ci.appveyor.com/project/Antidote1911/dexiosgui/branch/master)
-[![Cargo Build](https://github.com/Antidote1911/dexiosgui/actions/workflows/ci.yml/badge.svg)](https://github.com/Antidote1911/dexiosgui/actions/workflows/ci.yml)
+[![Cargo Build](https://github.com/Antidote1911/dexiosgui/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Antidote1911/dexiosgui/actions/workflows/ci.yml)
 [![License: GPL3](https://img.shields.io/badge/License-GPL3-green.svg)](https://opensource.org/licenses/GPL-3.0)
 
 
