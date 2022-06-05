@@ -5,7 +5,7 @@
 
 # DexiosGui
 **Simple cross-platform drag-and-drop Dexios file encryption.**<br/>
-Latest Windows x64 release is [here](https://github.com/Antidote1911/cryptyrust/releases/latest).
+Latest Windows x64 release is [here](https://github.com/Antidote1911/dexiosgui/releases/latest).
 
 DexiosGui is a Qt/C++ app for encrypt and decrypt files with the [Dexios format](https://github.com/brxken128/dexios) made by [ brxken128](https://github.com/brxken128).
 It only encrypt and decrypt with the Dexios "stream mode". "Memory mode" is not yet implemented.  
