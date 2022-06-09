@@ -2,7 +2,7 @@ use std::ffi::{CStr, CString};
 use std::os::raw::c_char;
 use std::ptr::null_mut;
 use dexios_core::primitives::Algorithm;
-use dexios_core::stream::Ui;
+use dexios_core::stream::Progress;
 use dexios_core::CORE_VERSION;
 
 use interface::{main_routine, Config, Direction};
@@ -10,7 +10,7 @@ struct ProgressUpdater {
     output_func: extern "C" fn(i32),
 }
 
-impl Ui for ProgressUpdater {
+impl Progress for ProgressUpdater {
     fn output(&self, percentage: i32) {
         (self.output_func)(percentage);
     }

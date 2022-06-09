@@ -10,14 +10,14 @@ use anyhow::Result;
 use dexios_core::header;
 use dexios_core::protected::Protected;
 
-use dexios_core::stream::{EncryptionStreams, Ui};
+use dexios_core::stream::{EncryptionStreams, Progress};
 use dexios_core::stream::DecryptionStreams;
 
 pub fn encrypt<>(
     input: &mut File,
     output: &mut File,
     password: &String,
-    ui: &Box<dyn Ui>,
+    ui: &Box<dyn Progress>,
     algorithm: Algorithm,
 ) -> Result<()> {
 
@@ -55,7 +55,7 @@ pub fn decrypt<>(
     input: &mut File,
     output: &mut File,
     password: &String,
-    ui: &Box<dyn Ui>,
+    ui: &Box<dyn Progress>,
 ) -> Result<()> {
 
     let filesize= input.metadata().unwrap().len();
