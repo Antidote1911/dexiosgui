@@ -1,8 +1,9 @@
 [workspace]
 
 members = [
-	"dexios_core",
-	"dexios_adapter"
+    "dexios-core",
+	"interface",
+	"adapter"
 ]
 
 [profile.release]

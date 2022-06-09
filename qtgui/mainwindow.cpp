@@ -75,7 +75,7 @@ void MainWindow::initViewMenu()
 void MainWindow::restartApp()
 {
     int ret = QMessageBox::question(this, tr("Restart Application ?"),
-                                    tr("To take effect, DexiosGui need to be restarted.\n"
+                                    tr("To take effect, DexiosGUI need to be restarted.\n"
                                        "Do you want to restart now ?"),
                                     QMessageBox::No | QMessageBox::Yes,
                                     QMessageBox::Yes);
@@ -127,14 +127,14 @@ void MainWindow::applyTheme()
 void MainWindow::slot_menuAbout() {
     auto Str = get_version2();
 
-    QMessageBox::about(this, "About DeoxyGui",
-                       "<h2>DeoxyGui</h2>"
+    QMessageBox::about(this, "About DexiosGUI",
+                       "<h2>DexiosGUI</h2>"
                        "Core Version: " + QString::fromStdString(Str) +
-                       "<p>Copyright (C) Antidote1911 2022 for c++ gui</p>"
-                       "<p>Copyright (C) brxken128  2022 for rust core</p>"
+                       "<p>Copyright (C) Antidote1911 2022 for c++ GUI</p>"
+                       "<p>Copyright (C) brxken128  2022 for the rust core crypto</p>"
                        "<p>Licensed under the GNU General Public License v3.0</p>"
-                       "<p><a href=\"https://github.com/Antidote1911/dexiosgui\">Dexiosgui GitHub</a></p>"
-                       "<p><a href=\"https://github.com/brxken128/dexios\">Dexios CLI GitHub</a></p>"
+                       "<p><a href=\"https://github.com/Antidote1911/dexiosgui\">DexiosGUI GitHub</a></p>"
+                       "<p><a href=\"https://github.com/brxken128/dexios-core\">Dexios core crypto GitHub</a></p>"
                        "<p><b>WARNING:</b> if you encrypt a file and lose or forget the password, the file cannot be recovered.</p>");
 }
 

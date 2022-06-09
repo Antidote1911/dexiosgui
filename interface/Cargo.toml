@@ -1,0 +1,9 @@
+[package]
+name = "interface"
+version = "4.0.0"
+authors = ["Antidote1911 <antidote1911@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.57"
+dexios-core = { path = "../dexios-core" }

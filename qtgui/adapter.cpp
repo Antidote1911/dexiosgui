@@ -63,7 +63,7 @@ Outcome passwordPrompts(Direction direction, QString* password)
             msgBox.exec();
             return redo;
         }
-        passwordConfirm = QInputDialog::getText(nullptr, "Confirm password", "", QLineEdit::Password, "", &okConfirm);
+        passwordConfirm = QInputDialog::getText(nullptr, "Confirm password", "Confirm password:", QLineEdit::Password, "", &okConfirm);
         if (!okConfirm) {
             return cancel;
         }

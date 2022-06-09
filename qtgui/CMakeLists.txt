@@ -49,11 +49,11 @@ else()
 endif()
 
 if (WIN32)
-    target_link_libraries(dexiosgui PRIVATE Qt${QT_VERSION_MAJOR}::Widgets bcrypt advapi32 user32 ws2_32 userenv ${CMAKE_CURRENT_SOURCE_DIR}/../target/release/dexios_adapter.lib)
+    target_link_libraries(dexiosgui PRIVATE Qt${QT_VERSION_MAJOR}::Widgets bcrypt advapi32 user32 ws2_32 userenv ${CMAKE_CURRENT_SOURCE_DIR}/../target/release/adapter.lib)
 endif (WIN32)
 
 if (UNIX)
-    target_link_libraries(dexiosgui PRIVATE Qt${QT_VERSION_MAJOR}::Widgets dl ${CMAKE_CURRENT_SOURCE_DIR}/../target/release/libdexios_adapter.a)
+    target_link_libraries(dexiosgui PRIVATE Qt${QT_VERSION_MAJOR}::Widgets dl ${CMAKE_CURRENT_SOURCE_DIR}/../target/release/libadapter.a)
 endif (UNIX)
 
 

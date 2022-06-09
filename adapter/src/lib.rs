@@ -1,8 +1,10 @@
 use std::ffi::{CStr, CString};
 use std::os::raw::c_char;
 use std::ptr::null_mut;
+use dexios_core::primitives::Algorithm;
+use dexios_core::stream::Ui;
 
-use dexios_core::{get_version, main_routine, Config, Direction, Ui, Algorithm, Secret};
+use interface::{get_version, main_routine, Config, Direction};
 struct ProgressUpdater {
     output_func: extern "C" fn(i32),
 }
@@ -47,7 +49,7 @@ pub extern "C" fn makeConfig(
         Err(_) => return null_mut(),
     };
     let ui = Box::new(ProgressUpdater { output_func });
-    Box::into_raw(Box::new(Config::new(dir,algo ,Secret::new(p), Some(f), Some(o), ui)))
+    Box::into_raw(Box::new(Config::new(dir,algo ,p, Some(f), Some(o), ui)))
 }
 
 #[no_mangle]
