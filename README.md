@@ -20,6 +20,7 @@ The gif demo is Cryptyrust, but Dexiosgui is similar.
 For now, DexiosGUI include Dexios-core Git crate in this project for some reasons:
 - Test the latest encryption format before it was released.
 - Make a little modification of the encryption/decryption loop to return the progress percentage. (Add this in the future release of the crate can be interesting for have a progress in cli or gui application.)
+- Add the constant "CORE_VERSION" to display the Dexios-core version in the DexiosGUI about window.
 
 DexiosGUI must be considered as Alpha and not be used as a production application. Please be patient !
 

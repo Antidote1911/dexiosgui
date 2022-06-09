@@ -9,11 +9,6 @@ use anyhow::Result;
 
 use std::fs::{remove_file, File};
 use std::time::Instant;
-use crate::constants::APP_VERSION;
-
-pub const fn get_version() -> &'static str {
-    APP_VERSION
-}
 
 pub fn main_routine(c: &Config) -> Result<f64> {
     let mut in_file =  File::open(&c.filename.as_ref().unwrap()).unwrap();

@@ -3,8 +3,9 @@ use std::os::raw::c_char;
 use std::ptr::null_mut;
 use dexios_core::primitives::Algorithm;
 use dexios_core::stream::Ui;
+use dexios_core::CORE_VERSION;
 
-use interface::{get_version, main_routine, Config, Direction};
+use interface::{main_routine, Config, Direction};
 struct ProgressUpdater {
     output_func: extern "C" fn(i32),
 }
@@ -54,7 +55,7 @@ pub extern "C" fn makeConfig(
 
 #[no_mangle]
 pub extern "C" fn get_version2() -> *mut c_char {
-    rust_to_c_string(get_version().to_string())
+    rust_to_c_string(CORE_VERSION.to_string())
 }
 
 /// # Safety
