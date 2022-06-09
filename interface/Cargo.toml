@@ -1,6 +1,6 @@
 [package]
 name = "interface"
-version = "4.0.1"
+version = "4.0.2"
 authors = ["Antidote1911 <antidote1911@gmail.com>"]
 edition = "2021"
 
