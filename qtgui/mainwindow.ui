@@ -109,7 +109,7 @@ or an encrypted file to decrypt</string>
   </widget>
   <action name="menu_About">
    <property name="text">
-    <string>About DixiosGUI</string>
+    <string>About DexiosGUI</string>
    </property>
    <property name="toolTip">
     <string>About Cryptyrust</string>
